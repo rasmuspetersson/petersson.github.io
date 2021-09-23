@@ -30,7 +30,7 @@ github_username:  github.com/rasmuspetersson
 
 # Build settings
 #theme: minima
-theme: moonwalk
+theme: jekyll-theme-hacker
 plugins:
   - jekyll-feed
 
