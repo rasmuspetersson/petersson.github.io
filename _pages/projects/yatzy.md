@@ -1,7 +1,7 @@
 ---
 layout: page
-type: game
-permalink: /games/yatzy
+type: project
+permalink: /projects/yatzy
 
 main-heading: "Yatzy"
 

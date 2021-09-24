@@ -4,112 +4,111 @@ layout: default
 {%- include header.html -%}
 
 <style>
+    html {
+        box-sizing: border-box;
+    }
 
-html {
-	box-sizing: border-box;
-}
+    body {
+        background: #f7f7f7;
+    }
 
-body {
-	background: #f7f7f7;
-}
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
+    .wrapper-1000 {
+        max-width: -webkit-calc(1000px - (30px * 2));
+        max-width: calc(1000px - (30px * 2));
+        margin-right: auto;
+        margin-left: auto;
+    }
 
-.wrapper-1000 {
-	max-width: -webkit-calc(1000px - (30px * 2));
-    max-width: calc(1000px - (30px * 2));
-    margin-right: auto;
-    margin-left: auto;
-}
+    .card-category {
+        overflow: hidden;
+        background-color: #fff;
+        margin-bottom: 36px;
+        box-shadow: 0 4px 16px 0 rgb(0 0 0 / 5%);
+        border: 1px solid #e6e8eb;
+        border-radius: 15px;
+        width: calc(33% - 10px);
+        margin: 5px;
+        display: inline-block;
+    }
 
-.card-category {
-    overflow: hidden;
-    background-color: #fff;
-    margin-bottom: 36px;
-    box-shadow: 0 4px 16px 0 rgb(0 0 0 / 5%);
-    border: 1px solid #e6e8eb;
-    border-radius: 15px;
-    width: calc(33% - 10px);
-    margin: 5px;
-    display: inline-block;
-}
+    @media only screen and (max-width: 700px) {
+        .card-category {
+            width: 46%;
+        }
+    }
 
-@media only screen and (max-width: 700px) {
-	.card-category {
-		width: 46%;
-	}
-}
+    .card-category-link,
+    .card-category-link:hover,
+    .card-category-link:visited {
+        color: black;
+    }
 
-.card-category-link,.card-category-link:hover,.card-category-link:visited {
-	color: black;
-}
+    a.card-category-heading {
+        color: black;
+        padding: 14px 18px;
+        padding-right: 2px;
+        display: inline-block;
+        text-overflow: ellipsis;
+        text-decoration: none;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 100%;
+        letter-spacing: 1px;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        font-weight: 700;
+        font-size: 15px;
+        font-family: 'Trebuchet MS', sans-serif;
+    }
 
-a.card-category-heading {
-	color: black;
-    padding: 14px 18px;
-    padding-right: 2px;
-    display: inline-block;
-    text-overflow: ellipsis;
-	text-decoration: none;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 100%;
-    letter-spacing: 1px;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    font-weight: 700;
-    font-size: 15px;
-    font-family: 'Trebuchet MS', sans-serif;
-}
+    .card-category-img {
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        height: 170px;
+    }
 
-.card-category-img {
-	background-repeat: no-repeat !important;
-    background-size: cover !important;
-	height: 170px;
-}
-
-h2 {
-    margin-left: 6px;
-    margin-top: 10px;
-}
-
+    h2 {
+        margin-left: 6px;
+        margin-top: 10px;
+    }
 </style>
 
 <main>
     <div class="wrapper-1000">
 
-	<h2>Top Projects</h2>
+        <h2>Top Unity Game Prototypes</h2>
 
-	{%- for page in site.pages -%} <!-- limit 3-->
-		{% if page.type == "project" %}
-			<a class="card-category-link" href="{{ page.url }}">
-				<div class="card-category">
-					<div class="card-category-img" style="background: {{ random-color | sample }}; background-image: url({{ page.images.main-image }}?tr=w-480);">&nbsp;</div>
-					<a class="card-category-heading" href="{{ page.url }}">{{ page.main-heading }}</a>
-				</div>
-			</a>
-		{% endif %}
-	{%- endfor -%}
+        {%- for page in site.pages -%}
+        {% if page.type == "game" %}
+        <a class="card-category-link" href="{{ page.url }}">
+            <div class="card-category">
+                <div class="card-category-img" style="background-image: url({{ page.images.main-image }});"></div>
+                <a class="card-category-heading" href="{{ page.url }}">{{ page.main-heading }}</a>
+            </div>
+        </a>
+        {% endif %}
+        {%- endfor -%}
 
-    <h2>Top Game Prototypes</h2>
+        <h2>Top Projects</h2>
 
-	{%- for page in site.pages -%}
-		{% if page.type == "game" %}
-			<a class="card-category-link" href="{{ page.url }}">
-				<div class="card-category">
-					<div class="card-category-img" style="background: {{ random-color | sample }}; background-image: url({{ page.images.main-image }}?tr=w-480);">&nbsp;</div>
-					<a class="card-category-heading" href="{{ page.url }}">{{ page.main-heading }}</a>
-				</div>
-			</a>
-		{% endif %}
-	{%- endfor -%}	
-		
-    
-	</div>
+        {%- for page in site.pages -%}
+        {% if page.type == "project" %}
+        <a class="card-category-link" href="{{ page.url }}">
+            <div class="card-category">
+                <div class="card-category-img" style="background-image: url({{ page.images.main-image }});"></div>
+                <a class="card-category-heading" href="{{ page.url }}">{{ page.main-heading }}</a>
+            </div>
+        </a>
+        {% endif %}
+        {%- endfor -%}
+
+    </div>
 </main>
 
 {%- include footer.html -%}
