@@ -9,7 +9,10 @@ layout: default
     }
 
     body {
-        background: #f7f7f7;
+       /* background: #f7f7f7; */
+       color: white;
+       background: #1e1e1e;
+    
     }
 
     *,
@@ -70,7 +73,33 @@ layout: default
     .card-category-img {
         background-repeat: no-repeat !important;
         background-size: cover !important;
-        height: 170px;
+        height: 300px;
+    }
+
+    .card-category-description {
+        color: black;
+        padding: 14px 18px;
+        padding-right: 2px;
+    }
+
+    .url-wrapper{
+        margin: auto;
+        width: 50%;
+    }
+    .card-category-url {
+        color:black !important;
+        padding: 7px 16px;
+        text-align: center;
+        display: inline-block;
+        text-decoration: none !important;
+        font-size: 18px;
+        margin: 6px 8px;
+        background-color: white;
+        border: 2px solid blueviolet;
+}
+    .card-category-url:hover{
+        color: blueviolet !important;
+        border: 2px solid black;
     }
 
     h2 {
@@ -90,6 +119,11 @@ layout: default
             <div class="card-category">
                 <div class="card-category-img" style="background-image: url({{ page.images.main-image }});"></div>
                 <a class="card-category-heading" href="{{ page.url }}">{{ page.main-heading }}</a>
+                    <div class="card-category-description">{{ page.description }}</div>
+                <div class="url-wrapper">
+                    <a class="card-category-url" href="{{ page.play-link.url }}">{{ page.play-link.name }}</a>
+                    <a class="card-category-url" href="{{ page.github-link.url }}">{{ page.github-link.name }}</a>
+                </div>
             </div>
         </a>
         {% endif %}
