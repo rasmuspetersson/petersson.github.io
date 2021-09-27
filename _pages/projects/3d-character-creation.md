@@ -1,7 +1,7 @@
 ---
 layout: page
-type: game
-permalink: /games/character-creator
+type: project
+permalink: /projects/character-creator
 
 main-heading: "3D Game Character Creator"
 
