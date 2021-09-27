@@ -10,6 +10,14 @@ images:
 
 description: "A simple character creator with inspiration from World of Warcraft."
 
+play-link:
+  name: PLAY
+  url: https://www.aftonbladet.se/
+
+github-link:
+  name: GITHUB
+  url: https://www.github.com/
+  
 ---
 ## Hello
 This is a test
