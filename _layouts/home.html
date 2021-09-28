@@ -9,7 +9,6 @@ layout: default
     }
 
     body {
-       /* background: #f7f7f7; */
        color: white;
        background: #1e1e1e;
     
@@ -30,10 +29,10 @@ layout: default
 
     .card-category {
         overflow: hidden;
-        background-color: #fff;
+        background: rgb(37, 37, 37);
         margin-bottom: 36px;
         box-shadow: 0 4px 16px 0 rgb(0 0 0 / 5%);
-        border: 1px solid #e6e8eb;
+        border: 1px solid #000000;
         border-radius: 15px;
         width: calc(50% - 20px);
         margin: 5px;
@@ -54,7 +53,8 @@ layout: default
     }
 
     a.card-category-heading {
-        color: black;
+        color: white;
+        background: rgb(59, 59, 59);
         padding: 14px 18px;
         padding-right: 2px;
         display: inline-block;
@@ -78,31 +78,36 @@ layout: default
     }
 
     .card-category-description {
-        color: black;
+        color: white;
         padding: 14px 18px;
         padding-right: 2px;
+        background: rgb(37, 37, 37);
     }
 
-    .url-wrapper{
+    .button-wrapper{
         margin: auto;
-        width: 50%;
+        text-align: center;
     }
-    .card-category-url {
-        color:black !important;
-        padding: 7px 16px;
+    .card-category-button {
+        padding: 2px 0px;
         text-align: center;
         display: inline-block;
-        text-decoration: none !important;
         font-size: 18px;
-        margin: 6px 8px;
-        background-color: white;
-        border: 2px solid blueviolet;
+        font-weight: 500;
+        margin: 10px 8px;
+        width: 117px;
+        border: 3px solid blueviolet;
+        text-decoration: none !important;
+        color: white !important;
+        transition: 0.3s;
 }
-    .card-category-url:hover{
-        color: blueviolet !important;
-        border: 2px solid black;
+    .card-category-button:hover{
+        border: 3px solid blueviolet;
+        background:  blueviolet;
     }
-
+    .main-heading-underline{
+        text-decoration: underline;
+    }
     h2 {
         margin-left: 6px;
         margin-top: 10px;
@@ -119,11 +124,13 @@ layout: default
         <a class="card-category-link" href="{{ page.url }}">
             <div class="card-category">
                 <div class="card-category-img" style="background-image: url({{ page.images.main-image }});"></div>
-                <a class="card-category-heading" href="{{ page.url }}">{{ page.main-heading }}</a>
+                <a class="card-category-heading" href="{{ page.url }}">
+                    <span class="main-heading-underline">{{ page.main-heading }}</span> {{ page.sub-heading }}
+                </a>
                     <div class="card-category-description">{{ page.description }}</div>
-                <div class="url-wrapper">
-                    <a class="card-category-url" href="{{ page.play-link.url }}">{{ page.play-link.name }}</a>
-                    <a class="card-category-url" href="{{ page.github-link.url }}">{{ page.github-link.name }}</a>
+                <div class="button-wrapper">
+                    <a class="card-category-button" href="{{ page.play-link.url }}">{{ page.play-link.name }}</a>
+                    <a class="card-category-button" href="{{ page.github-link.url }}">{{ page.github-link.name }}</a>
                 </div>
             </div>
         </a>
@@ -136,7 +143,13 @@ layout: default
         <a class="card-category-link" href="{{ page.url }}">
             <div class="card-category">
                 <div class="card-category-img" style="background-image: url({{ page.images.main-image }});"></div>
-                <a class="card-category-heading" href="{{ page.url }}">{{ page.main-heading }}</a>
+                <a class="card-category-heading" href="{{ page.url }}"><span class="main-heading-underline">{{ page.main-heading }}</span> {{ page.sub-heading }}
+                </a>
+                    <div class="card-category-description">{{ page.description }}</div>
+                <div class="button-wrapper">
+                    <a class="card-category-button" href="{{ page.play-link.url }}">{{ page.play-link.name }}</a>
+                    <a class="card-category-button" href="{{ page.github-link.url }}">{{ page.github-link.name }}</a>
+                </div>
             </div>
         </a>
         {% endif %}
