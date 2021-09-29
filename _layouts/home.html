@@ -9,9 +9,9 @@ layout: default
     }
 
     body {
-       color: white;
-       background: #1e1e1e;
-    
+        color: white;
+        background: #1e1e1e;
+
     }
 
     *,
@@ -26,7 +26,7 @@ layout: default
         margin-right: auto;
         margin-left: auto;
     }
-    
+
     @media only screen and (max-width: 700px) {
         .wrapper-1000 {
             max-width: -webkit-calc(1000px - (30px * 2));
@@ -37,7 +37,7 @@ layout: default
         }
     }
 
-    
+
 
     .card-category {
         overflow: hidden;
@@ -98,10 +98,11 @@ layout: default
         background: rgb(37, 37, 37);
     }
 
-    .button-wrapper{
+    .button-wrapper {
         margin: auto;
         text-align: center;
     }
+
     .card-category-button {
         padding: 2px 0px;
         text-align: center;
@@ -114,21 +115,28 @@ layout: default
         text-decoration: none !important;
         color: white !important;
         transition: 0.3s;
-}
-    .card-category-button:hover{
-        border: 3px solid blueviolet;
-        background:  blueviolet;
     }
-    .main-heading-underline{
+
+    .card-category-button:hover {
+        border: 3px solid blueviolet;
+        background: blueviolet;
+    }
+
+    .main-heading-underline {
         text-decoration: underline;
     }
+
     h2 {
         margin-left: 6px;
         margin-top: 10px;
     }
+    #slider{
+        height: 300;
+    }
 </style>
 
 <main>
+    <script src="/assets/js/ideal-image-slider.js"></script>
     <div class="wrapper-1000">
 
         <h2>Top Unity Game Prototypes</h2>
@@ -137,11 +145,26 @@ layout: default
         {% if page.type == "game" %}
         <a class="card-category-link" href="{{ page.url }}">
             <div class="card-category">
-                <div class="card-category-img" style="background-image: url({{ page.images.main-image }});"></div>
+                <div id="slider">
+                    <img src="{{ page.images.src0 }}" alt="">
+                    <img data-src="{{ page.images.src1 }}" alt="">
+                    <img data-src="{{ page.images.src2 }}" alt="">
+                    <img data-src="{{ page.images.src3 }}" alt="">
+                    <img data-src="{{ page.images.src4 }}" alt="">
+                    <script>var slider = new IdealImageSlider.Slider({
+                        selector: '#slider',
+                        interval: 2500,
+                        disableNav: true,
+                        onStart: function(){
+		                    console.log('onStart');
+	                    }
+                      });
+                      slider.start();</script>
+                </div>
                 <a class="card-category-heading" href="{{ page.url }}">
                     <span class="main-heading-underline">{{ page.main-heading }}</span> {{ page.sub-heading }}
                 </a>
-                    <div class="card-category-description">{{ page.description }}</div>
+                <div class="card-category-description">{{ page.description }}</div>
                 <div class="button-wrapper">
                     <a class="card-category-button" href="{{ page.play-link.url }}">{{ page.play-link.name }}</a>
                     <a class="card-category-button" href="{{ page.github-link.url }}">{{ page.github-link.name }}</a>
@@ -157,9 +180,10 @@ layout: default
         <a class="card-category-link" href="{{ page.url }}">
             <div class="card-category">
                 <div class="card-category-img" style="background-image: url({{ page.images.main-image }});"></div>
-                <a class="card-category-heading" href="{{ page.url }}"><span class="main-heading-underline">{{ page.main-heading }}</span> {{ page.sub-heading }}
+                <a class="card-category-heading" href="{{ page.url }}"><span class="main-heading-underline">{{
+                        page.main-heading }}</span> {{ page.sub-heading }}
                 </a>
-                    <div class="card-category-description">{{ page.description }}</div>
+                <div class="card-category-description">{{ page.description }}</div>
                 <div class="button-wrapper">
                     <a class="card-category-button" href="{{ page.play-link.url }}">{{ page.play-link.name }}</a>
                     <a class="card-category-button" href="{{ page.github-link.url }}">{{ page.github-link.name }}</a>
@@ -169,7 +193,7 @@ layout: default
         {% endif %}
         {%- endfor -%}
 
-    </div>
+    </div> <!-- Wrapper-1000-->
 </main>
 
 {%- include footer.html -%}

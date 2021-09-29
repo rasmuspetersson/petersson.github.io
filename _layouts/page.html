@@ -2,54 +2,85 @@
 layout: default
 ---
 <style>
-.wrapper-1000 {
-  max-width: -webkit-calc(1000px - (30px * 2));
-  max-width: calc(1000px - (30px * 2));
-  margin-right: auto;
-  margin-left: auto;
-}
+  .wrapper-1000 {
+    max-width: -webkit-calc(1000px - (30px * 2));
+    max-width: calc(1000px - (30px * 2));
+    margin-right: auto;
+    margin-left: auto;
+  }
 
-.project-main {
-  padding-top: 20px;
-}
+  .project-main {
+    padding-top: 20px;
+    text-align: center;
+  }
 
-.project-header {
-  background-color: #fff;
-  box-shadow: 0 4px 16px 0 rgb(0 0 0 / 5%);
-  border: 1px solid #e6e8eb;
-  border-radius: 15px;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  font-weight: 700;
-  font-family: 'Trebuchet MS', sans-serif;
-}
+  .project-header {
+    background-color: #fff;
+    box-shadow: 0 4px 16px 0 rgb(0 0 0 / 5%);
+    border: 1px solid #e6e8eb;
+    border-radius: 15px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 700;
+    font-family: 'Trebuchet MS', sans-serif;
+  }
 
-.project-main-heading {
-	font-size: 30px !important;
-  padding: 18px 22px;
-  margin-bottom: 0px;
-}
+  .project-main-heading {
+    font-size: 30px !important;
+    padding: 18px 22px;
+    margin-bottom: 0px;
+  }
 
-.project-img {
-	background-repeat: no-repeat !important;
-  background-size: cover !important;
-	height: 500px;
-}
+  .project-img {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    height: 500px;
+  }
 </style>
-
 {%- include header.html -%}
-    <main class="project-main">
-      <div class="wrapper-1000">
-		  <header class="project-header">
-			<h1 class="project-main-heading">{{ page.main-heading }}</h1>
-			<div class="project-img" style="background-image: url({{ page.images.main-image }});"></div>
-		  </header>
+<script src="/assets/js/ideal-image-slider.js"></script>
+<main class="project-main">
 
-		  <div class="project-content">
-			{{ content }}
-		  </div>
+  <div class="wrapper-1000">
+    <header class="project-header">
+      <h1 class="project-main-heading">{{ page.main-heading }}</h1>
+      <!-- div class="project-img" style="background-image: url({{ page.images.main-image }});"></div>  -->
+    
+      <div id="slider">
+        <img src="{{ page.images.src0 }}" alt="">
+        <img data-src="{{ page.images.src1 }}" alt="">
+        <img data-src="{{ page.images.src2 }}" alt="">
+        <img data-src="{{ page.images.src3 }}" alt="">
+        <img data-src="{{ page.images.src4 }}" alt="">
+        <script>var slider = new IdealImageSlider.Slider({
+            selector: '#slider',
+            height: 600, // Required but can be set by CSS
+            interval: 6000
+          });
+          slider.start();</script>
+        
 
+        </div>
+      
+    </header>
+    <div class="project-content">
+      {{ content }}
+      LORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEM
+      LORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEM
+      LORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEM
+      LORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEM
+      LORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEM
+      LORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEM
+      LORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEM
+      LORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEM
+      LORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEM
+      LORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEM
+      LORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEM
+      LORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEM
+      LORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEM
+      LORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEMLORPEM
+    </div>
+  </div> <!-- Wrapper -->
 
-      </div>
-    </main>
+</main>
 {%- include footer.html -%}
