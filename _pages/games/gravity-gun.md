@@ -7,17 +7,22 @@ main-heading: "Gravity Gun"
 sub-heading: " - FPS shooter"
 
 images:
-  main-image: https://images.unsplash.com/photo-1520386909218-72b5e0550126?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=80
+  main-image: /assets/images/SpacePrincess/SpacePrincess_0.png
+  src0: /assets/images/8Bit-Brawl/8bit_1.png
+  src1: /assets/images/SpacePrincess/SpacePrincess_0.png
+  src2: /assets/images/8Bit-Brawl/8bit_3.png
+  src3: /assets/images/SpacePrincess/SpacePrincess_3.png
+  src4: /assets/images/8Bit-Brawl/8bit_4.png
 
 description: "A simple character creator with inspiration from World of Warcraft."
 
 play-link:
   name: PLAY
-  url: https://www.aftonbladet.se/
+  url: https://rasmuspetersson.github.io/GravityGun/index.html
 
 github-link:
   name: GITHUB
-  url: https://www.github.com/
+  url: https://github.com/rasmuspetersson/GravityGun
   
 ---
 ## Hello

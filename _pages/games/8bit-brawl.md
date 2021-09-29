@@ -7,7 +7,12 @@ main-heading: "8Bit-Brawl"
 sub-heading: "- 2D Action Platformer"
 
 images:
-  main-image: https://images.unsplash.com/photo-1612404730960-5c71577fca11?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80
+  main-image: /assets/images/8Bit-Brawl/8bit_0.png
+  src0: /assets/images/8Bit-Brawl/8bit_0.png
+  src1: /assets/images/8Bit-Brawl/8bit_1.png
+  src2: /assets/images/8Bit-Brawl/8bit_2.png
+  src3: /assets/images/8Bit-Brawl/8bit_3.png
+  src4: /assets/images/8Bit-Brawl/8bit_4.png
 
 description: "A simple character creator with inspiration from World of Warcraft."
 
