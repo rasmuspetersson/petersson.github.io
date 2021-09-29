@@ -3,37 +3,37 @@ layout: default
 ---
 <style>
 .wrapper-1000 {
-	max-width: -webkit-calc(1000px - (30px * 2));
-    max-width: calc(1000px - (30px * 2));
-    margin-right: auto;
-    margin-left: auto;
+  max-width: -webkit-calc(1000px - (30px * 2));
+  max-width: calc(1000px - (30px * 2));
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .project-main {
-    padding-top: 20px;
+  padding-top: 20px;
 }
 
 .project-header {
-    background-color: #fff;
-    box-shadow: 0 4px 16px 0 rgb(0 0 0 / 5%);
-    border: 1px solid #e6e8eb;
-    border-radius: 15px;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    font-weight: 700;
-    font-family: 'Trebuchet MS', sans-serif;
+  background-color: #fff;
+  box-shadow: 0 4px 16px 0 rgb(0 0 0 / 5%);
+  border: 1px solid #e6e8eb;
+  border-radius: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 700;
+  font-family: 'Trebuchet MS', sans-serif;
 }
 
 .project-main-heading {
 	font-size: 30px !important;
-    padding: 18px 22px;
-    margin-bottom: 0px;
+  padding: 18px 22px;
+  margin-bottom: 0px;
 }
 
 .project-img {
 	background-repeat: no-repeat !important;
-    background-size: cover !important;
-	height: 400px;
+  background-size: cover !important;
+	height: 500px;
 }
 </style>
 
@@ -42,8 +42,9 @@ layout: default
       <div class="wrapper-1000">
 		  <header class="project-header">
 			<h1 class="project-main-heading">{{ page.main-heading }}</h1>
-			<div class="project-img" style="background-image: url({{ page.images.main-image }};">&nbsp;</div>
+			<div class="project-img" style="background-image: url({{ page.images.main-image }});"></div>
 		  </header>
+
 		  <div class="project-content">
 			{{ content }}
 		  </div>

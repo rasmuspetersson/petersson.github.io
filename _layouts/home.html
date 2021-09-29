@@ -26,6 +26,18 @@ layout: default
         margin-right: auto;
         margin-left: auto;
     }
+    
+    @media only screen and (max-width: 700px) {
+        .wrapper-1000 {
+            max-width: -webkit-calc(1000px - (30px * 2));
+            max-width: calc(1000px - (30px * 2));
+            margin-right: auto;
+            margin-left: auto;
+            margin: 0px 20px;
+        }
+    }
+
+    
 
     .card-category {
         overflow: hidden;
@@ -41,8 +53,10 @@ layout: default
 
     @media only screen and (max-width: 700px) {
         .card-category {
-            /* width: 46%; */
-            width: calc(100% - 30px);
+            /* width: 46%; 
+            width: calc(100% - 30px);*/
+            width: 100%;
+            margin: 10px 0px;
         }
     }
 

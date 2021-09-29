@@ -13,11 +13,11 @@ description: "A simple character creator with inspiration from World of Warcraft
 
 play-link:
   name: PLAY
-  url: https://www.aftonbladet.se/
+  url: https://rasmuspetersson.github.io/GravityGun/index.html
 
 github-link:
   name: GITHUB
-  url: https://www.github.com/
+  url: https://github.com/rasmuspetersson/GravityGun
   
 ---
 ## Hello
