@@ -130,9 +130,10 @@ layout: default
         margin-left: 6px;
         margin-top: 10px;
     }
-    #slider{
+    .slider {
         height: 300;
     }
+
 </style>
 
 <main>
@@ -145,21 +146,28 @@ layout: default
         {% if page.type == "game" %}
         <a class="card-category-link" href="{{ page.url }}">
             <div class="card-category">
-                <div id="slider">
+                <!-- <div id="slider"> -->
+                    <div id="{{ page.gameID }}">
                     <img src="{{ page.images.src0 }}" alt="">
                     <img data-src="{{ page.images.src1 }}" alt="">
                     <img data-src="{{ page.images.src2 }}" alt="">
                     <img data-src="{{ page.images.src3 }}" alt="">
                     <img data-src="{{ page.images.src4 }}" alt="">
-                    <script>var slider = new IdealImageSlider.Slider({
-                        selector: '#slider',
-                        interval: 2500,
+                    <script>var {{ page.slider }} = new IdealImageSlider.Slider({
+                        selector: '#{{ page.gameID }}',
+                        interval: 1500,
                         disableNav: true,
-                        onStart: function(){
-		                    console.log('onStart');
-	                    }
+
                       });
-                      slider.start();</script>
+                      let {{ page.gameID }} = document.getElementById("{{ page.gameID }}");
+                      {{ page.gameID }}.addEventListener("mouseover", function( event ) {
+                        {{ page.slider }}.start();
+                      });
+                      {{ page.gameID}}.addEventListener("mouseout", function( event ) {
+                        {{ page.slider }}.stop();
+                    });
+                      </script>
+
                 </div>
                 <a class="card-category-heading" href="{{ page.url }}">
                     <span class="main-heading-underline">{{ page.main-heading }}</span> {{ page.sub-heading }}

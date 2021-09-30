@@ -6,13 +6,15 @@ permalink: /games/gravity-gun
 main-heading: "Gravity Gun"
 sub-heading: " - FPS shooter"
 
+slider: gunslide
+gameID: gun
+
 images:
-  main-image: /assets/images/SpacePrincess/SpacePrincess_0.png
-  src0: /assets/images/8Bit-Brawl/8bit_1.png
-  src1: /assets/images/SpacePrincess/SpacePrincess_0.png
-  src2: /assets/images/8Bit-Brawl/8bit_3.png
-  src3: /assets/images/SpacePrincess/SpacePrincess_3.png
-  src4: /assets/images/8Bit-Brawl/8bit_4.png
+  src0: /assets/images/GravityGun/GravityGun_0.png
+  src1: /assets/images/GravityGun/GravityGun_1.png
+  src2: /assets/images/GravityGun/GravityGun_2.png
+  src3: /assets/images/GravityGun/GravityGun_3.png
+  src4: /assets/images/GravityGun/GravityGun_4.png
 
 description: "A simple character creator with inspiration from World of Warcraft."
 

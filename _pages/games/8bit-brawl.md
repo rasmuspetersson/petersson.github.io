@@ -6,6 +6,9 @@ permalink: /games/8bit-brawl
 main-heading: "8Bit-Brawl"
 sub-heading: "- 2D Action Platformer"
 
+slider: bitslide
+gameID: bit
+
 images:
   main-image: /assets/images/8Bit-Brawl/8bit_0.png
   src0: /assets/images/8Bit-Brawl/8bit_0.png
