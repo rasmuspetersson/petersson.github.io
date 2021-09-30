@@ -6,6 +6,9 @@ permalink: /games/space-princess
 main-heading: "Space Princess"
 sub-heading: " - 3D Space Flying Game"
 
+slider: spaceslide
+gameID: space
+
 images:
   src0: /assets/images/SpacePrincess/SpacePrincess_0.png
   src1: /assets/images/SpacePrincess/SpacePrincess_1.png

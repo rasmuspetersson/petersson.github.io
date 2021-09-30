@@ -1,21 +1,52 @@
 <style>
-.footer {
-	padding: 30px 0;
-  background: rgb(37, 37, 37);
-  color: white;
-}
-.footer-wrapper {
-	max-width: -webkit-calc(1000px - (30px * 2));
+  .footer {
+    padding: 30px 0;
+    background: rgb(37, 37, 37);
+    color: white;
+  }
+
+  .footer-wrapper {
+    max-width: -webkit-calc(1000px - (30px * 2));
     max-width: calc(1000px - (30px * 2));
     margin-right: auto;
     margin-left: auto;
-}
+    text-align: center;
+  }
+
+  .f-message {
+    display: block;
+  }
+
+  .f-contact-info {
+    text-align: left;
+    margin: auto;
+    width: 50%;
+  }
+
+  .f-contact {
+    float: left;
+    padding: 15px 15px;
+
+  }
 </style>
 
 <footer class="footer">
 
   <div class="footer-wrapper">
-  <span>[Footer] Hello World</span>
+    <span>My Contact Info</span>
+    <span class="f-message">Thanks for visiting my page, hope you liked it.
+      Feel free to contact me with the information below. Have a great day!</span>
+
+    <div class="f-contact-info">
+      <div class="f-contact">
+        <span class="message">Email</span>
+        <a href="mailto:rasmuspetersson@msn.com">rasmuspetersson@msn.com</a>
+      </div>
+      <div class="f-contact">
+        <span class="message">LinkedIn</span>
+        <a href="https://se.linkedin.com/in/rasmus-petersson-a79046176">Rasmus Petersson</a>
+      </div>
+    </div>
   </div>
 
 </footer>
