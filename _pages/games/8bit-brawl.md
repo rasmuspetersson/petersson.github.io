@@ -17,7 +17,9 @@ images:
   src3: /assets/images/8Bit-Brawl/8bit_3.png
   src4: /assets/images/8Bit-Brawl/8bit_4.png
 
-description: "A simple character creator with inspiration from World of Warcraft."
+description: "A new up hotted Mario game with new mechanics like weapons and wacky cool abilities."
+
+readme: https://github.com/rasmuspetersson/8Bit-Brawl/blob/main/README.md#Controls
 
 play-link:
   name: PLAY
