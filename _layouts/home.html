@@ -141,10 +141,9 @@ layout: default
     <div class="wrapper-1000">
 
         <h2>Top Unity Game Prototypes</h2>
-
         {%- for page in site.pages -%}
         {% if page.type == "game" %}
-        <a class="card-category-link" href="{{ page.url }}">
+        <a class="card-category-link" href="{{ page.github-link.url }}">
             <div class="card-category">
                 <!-- <div id="slider"> -->
                     <div id="{{ page.gameID }}">
@@ -157,7 +156,6 @@ layout: default
                         selector: '#{{ page.gameID }}',
                         interval: 1500,
                         disableNav: true,
-
                       });
                       let {{ page.gameID }} = document.getElementById("{{ page.gameID }}");
                       {{ page.gameID }}.addEventListener("mouseover", function( event ) {
@@ -172,7 +170,9 @@ layout: default
                 <a class="card-category-heading" href="{{ page.url }}">
                     <span class="main-heading-underline">{{ page.main-heading }}</span> {{ page.sub-heading }}
                 </a>
-                <div class="card-category-description">{{ page.description }}</div>
+                <div class="card-category-description">{{ page.description }} <br />
+                    <br />For controls, please see the <a href="{{ page.readme }}">README</a>-file before playing.
+                </div>
                 <div class="button-wrapper">
                     <a class="card-category-button" href="{{ page.play-link.url }}">{{ page.play-link.name }}</a>
                     <a class="card-category-button" href="{{ page.github-link.url }}">{{ page.github-link.name }}</a>
@@ -181,15 +181,15 @@ layout: default
         </a>
         {% endif %}
         {%- endfor -%}
-        <h2>Top Projects</h2>
+        <h2>Upcoming Projects</h2>
 
         {%- for page in site.pages -%}
         {% if page.type == "project" %}
         <a class="card-category-link" href="{{ page.url }}">
             <div class="card-category">
                 <div class="card-category-img" style="background-image: url({{ page.images.main-image }});"></div>
-                <a class="card-category-heading" href="{{ page.url }}"><span class="main-heading-underline">{{
-                        page.main-heading }}</span> {{ page.sub-heading }}
+                <a class="card-category-heading" href="{{ page.url }}"><span class="main-heading-underline">
+                    {{ page.main-heading }}</span> {{ page.sub-heading }}
                 </a>
                 <div class="card-category-description">{{ page.description }}</div>
                 <div class="button-wrapper">

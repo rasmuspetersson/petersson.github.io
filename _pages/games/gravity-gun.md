@@ -16,7 +16,9 @@ images:
   src3: /assets/images/GravityGun/GravityGun_3.png
   src4: /assets/images/GravityGun/GravityGun_4.png
 
-description: "A simple character creator with inspiration from World of Warcraft."
+description: "A small playground 3D FPS Shooter where you can shoot gravity and anti-gravity bullets."
+
+readme: https://github.com/rasmuspetersson/GravityGun/blob/main/README.md#Controls
 
 play-link:
   name: PLAY

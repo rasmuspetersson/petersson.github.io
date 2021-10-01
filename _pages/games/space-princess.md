@@ -16,7 +16,9 @@ images:
   src3: /assets/images/SpacePrincess/SpacePrincess_3.png
   src4: /assets/images/SpacePrincess/SpacePrincess_4.png
 
-description: "testing"
+description: "A simple 3D flying game where you steer a rocket ship through space made with Unity game engine."
+
+readme: https://github.com/rasmuspetersson/SpacePrincess/blob/main/README.md#Controls
 
 play-link:
   name: PLAY
