@@ -154,10 +154,14 @@ layout: default
                     <img data-src="{{ page.images.src4 }}" alt="">
                     <script>var {{ page.slider }} = new IdealImageSlider.Slider({
                         selector: '#{{ page.gameID }}',
-                        interval: 1500,
+                        interval: 2000,
+                        transitionDuration: 500,
                         disableNav: true,
                       });
                       let {{ page.gameID }} = document.getElementById("{{ page.gameID }}");
+                      {{ page.gameID}}.addEventListener("mouseenter", function( event ) {
+                        {{ page.slider }}.nextSlide();
+                    });
                       {{ page.gameID }}.addEventListener("mouseover", function( event ) {
                         {{ page.slider }}.start();
                       });
