@@ -3,13 +3,13 @@ layout: page
 type: project
 permalink: /projects/yatzy
 
-main-heading: "Yatzy med with Java"
+main-heading: "Yatzy with Java"
 sub-heading:
 
 images:
   main-image: /assets/images/Yatsy/yatsy_0.png
 
-description: "Currently under development a fully playable Yatsy game with scoreboard in the console window"
+description: "Currently under development a fully playable Yatsy game with scoreboard in the console window."
 
 play-link:
   name: PLAY
