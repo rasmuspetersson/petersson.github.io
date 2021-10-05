@@ -167,7 +167,7 @@ layout: default
                       </script>
 
                 </div>
-                <a class="card-category-heading" href="{{ page.url }}">
+                <a class="card-category-heading" href="{{ page.github-link.url }}">
                     <span class="main-heading-underline">{{ page.main-heading }}</span> {{ page.sub-heading }}
                 </a>
                 <div class="card-category-description">{{ page.description }} <br />
@@ -185,23 +185,19 @@ layout: default
 
         {%- for page in site.pages -%}
         {% if page.type == "project" %}
-        <a class="card-category-link" href="{{ page.url }}">
+        <a class="card-category-link" href="#">
             <div class="card-category">
                 <div class="card-category-img" style="background-image: url({{ page.images.main-image }});"></div>
-                <a class="card-category-heading" href="{{ page.url }}"><span class="main-heading-underline">
+                <a class="card-category-heading" href="#"><span class="main-heading-underline">
                     {{ page.main-heading }}</span> {{ page.sub-heading }}
                 </a>
                 <div class="card-category-description">{{ page.description }}</div>
-                <div class="button-wrapper">
-                    <a class="card-category-button" href="{{ page.play-link.url }}">{{ page.play-link.name }}</a>
-                    <a class="card-category-button" href="{{ page.github-link.url }}">{{ page.github-link.name }}</a>
-                </div>
             </div>
         </a>
         {% endif %}
         {%- endfor -%}
 
-    </div> <!-- Wrapper-1000-->
+    </div> <!-- Wrapper -->
 </main>
 
 {%- include footer.html -%}
