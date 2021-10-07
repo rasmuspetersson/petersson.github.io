@@ -10,11 +10,11 @@ slider: gunslide
 gameID: gun
 
 images:
-  src0: /assets/images/GravityGun/GravityGun_0.png
-  src1: /assets/images/GravityGun/GravityGun_1.png
-  src2: /assets/images/GravityGun/GravityGun_2.png
-  src3: /assets/images/GravityGun/GravityGun_3.png
-  src4: /assets/images/GravityGun/GravityGun_4.png
+  src0: /assets/images/GravityGun/GravityGun_0.jpg
+  src1: /assets/images/GravityGun/GravityGun_1.jpg
+  src2: /assets/images/GravityGun/GravityGun_2.jpg
+  src3: /assets/images/GravityGun/GravityGun_3.jpg
+  src4: /assets/images/GravityGun/GravityGun_4.jpg
 
 description: "A small playground 3D FPS Shooter where you can shoot gravity and anti-gravity bullets."
 
