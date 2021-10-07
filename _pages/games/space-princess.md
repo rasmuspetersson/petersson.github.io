@@ -10,11 +10,11 @@ slider: spaceslide
 gameID: space
 
 images:
-  src0: /assets/images/SpacePrincess/SpacePrincess_0.png
-  src1: /assets/images/SpacePrincess/SpacePrincess_1.png
-  src2: /assets/images/SpacePrincess/SpacePrincess_2.png
-  src3: /assets/images/SpacePrincess/SpacePrincess_3.png
-  src4: /assets/images/SpacePrincess/SpacePrincess_4.png
+  src0: /assets/images/SpacePrincess/SpacePrincess_0.jpg
+  src1: /assets/images/SpacePrincess/SpacePrincess_1.jpg
+  src2: /assets/images/SpacePrincess/SpacePrincess_2.jpg
+  src3: /assets/images/SpacePrincess/SpacePrincess_3.jpg
+  src4: /assets/images/SpacePrincess/SpacePrincess_4.jpg
 
 description: "A simple 3D flying game where you steer a rocket ship through space made with Unity game engine."
 

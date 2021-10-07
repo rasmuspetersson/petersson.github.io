@@ -10,12 +10,11 @@ slider: bitslide
 gameID: bit
 
 images:
-  main-image: /assets/images/8Bit-Brawl/8bit_0.png
-  src0: /assets/images/8Bit-Brawl/8bit_0.png
-  src1: /assets/images/8Bit-Brawl/8bit_1.png
-  src2: /assets/images/8Bit-Brawl/8bit_2.png
-  src3: /assets/images/8Bit-Brawl/8bit_3.png
-  src4: /assets/images/8Bit-Brawl/8bit_4.png
+  src0: /assets/images/8Bit-Brawl/8bit_0.jpg
+  src1: /assets/images/8Bit-Brawl/8bit_1.jpg
+  src2: /assets/images/8Bit-Brawl/8bit_2.jpg
+  src3: /assets/images/8Bit-Brawl/8bit_3.jpg
+  src4: /assets/images/8Bit-Brawl/8bit_4.jpg
 
 description: "A new up hotted Mario game with new mechanics like weapons and wacky cool abilities."
 
