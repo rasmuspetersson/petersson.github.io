@@ -29,5 +29,3 @@ github-link:
   url: https://github.com/rasmuspetersson/GravityGun
   
 ---
-## Hello
-Another test
