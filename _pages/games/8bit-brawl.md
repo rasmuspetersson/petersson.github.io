@@ -29,5 +29,3 @@ github-link:
   url: https://github.com/rasmuspetersson/8Bit-Brawl
   
 ---
-## Hello
-This is a test
