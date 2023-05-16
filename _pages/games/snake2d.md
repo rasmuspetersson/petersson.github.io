@@ -12,7 +12,7 @@ gameID: bit
 images:
   src0: /assets/images/Snake2D/snake_1.png
 
-description: "A new up hotted Mario game with new mechanics like weapons and wacky cool abilities."
+description: "A simple but yet fierce game about a snake eating apples."
 
 readme: 
 
@@ -22,6 +22,6 @@ play-link:
 
 github-link:
   name: GITHUB
-  url: https://github.com/rasmuspetersson/8Bit-Brawl
+  url: https://github.com/rasmuspetersson/snake2d
   
 ---
